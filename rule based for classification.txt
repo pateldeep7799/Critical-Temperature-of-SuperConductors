@@ -1,0 +1,39 @@
+=== Run information ===
+
+Scheme:weka.classifiers.rules.DecisionTable -X 1 -S "weka.attributeSelection.BestFirst -D 1 -N 5"
+Relation:     critical_tempurature
+Instances:    21263
+Attributes:   3
+              PCA1
+              PCA2
+              Critical_Temperature
+Test mode:split 80.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+Decision Table:
+
+Number of training instances: 21263
+Number of Rules : 80
+Non matches covered by Majority class.
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 3
+	Merit of best subset found:    0.309
+Evaluation (for feature selection): CV (leave one out) 
+Feature set: 1,2,3
+
+Time taken to build model: 0.14 seconds
+
+=== Evaluation on test split ===
+=== Summary ===
+
+Correlation coefficient                  0.7835
+Mean absolute error                      0.1904
+Root mean squared error                  0.3108
+Relative absolute error                 38.0882 %
+Root relative squared error             62.1614 %
+Total Number of Instances             4253     
+
